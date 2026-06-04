@@ -1,4 +1,6 @@
-*, ::before, ::after {
+*,
+::before,
+::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -27,20 +29,91 @@
 body {
   background: var(--stone-100);
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
 }
 main {
-  width: 738px;
-  height: 1710px;
-  padding: 40px;
-  margin: 40px auto;
+  width: 100%;
+  max-width: 46.125rem;
+  /*height: 1710px;*/
+  padding: 2.5rem;
   background: var(--white);
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 2rem;
   border-radius: 20px;
 }
 img {
+  border-radius: 10px;
   display: block;
-  width: 657px;
-  height: 302px;
+  width: 100%;
+  height: auto;
+  max-height: 302px;
+  object-fit: cover;
+}
+.recipe {
+  h1 {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-size: 2.1875rem;
+    margin-top: 0.8rem;
+    color: var(--stone-900);
+  }
+  p {
+    font-family: "Outfit", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--stone-600);
+    margin: 1.6rem auto;
+  }
+}
+.prep_card {
+  background-color: var(--rose-50);
+  width: 100%;
+  /*max-width: 41rem;*/
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 1.75rem;
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem;
+  h3 {
+    color: var(--rose-800);
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  ul {
+    padding-left: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--stone-600);
+  }
+  li::marker {
+    color: var(--rose-800); /* Custom color for bullets */
+  }
+  li {
+    padding-left: 1.2rem;
+  }
+}
+.ingredient_card {
+  margin-top: 2.125rem;
+  font-family: "Outfit", sans-serif;
+  h2 {
+    font-family: "Young Serif", serif;
+    font-size: 1.5rem;
+    color: var(--brown-800);
+  }
+  ul {
+    padding-left: 1rem;
+    padding-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--stone-600);
+  }
+  li {
+    padding-left: 1.2rem;
+  }
 }
