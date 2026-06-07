@@ -53,6 +53,12 @@ img {
   max-height: 302px;
   object-fit: cover;
 }
+li::marker {
+    color: var(--rose-800); 
+}
+hr{
+  color: var(--stone-150);
+}
 .recipe {
   h1 {
     font-family: "Young Serif", serif;
@@ -90,9 +96,6 @@ img {
     gap: 0.5rem;
     color: var(--stone-600);
   }
-  li::marker {
-    color: var(--rose-800); /* Custom color for bullets */
-  }
   li {
     padding-left: 1.2rem;
   }
@@ -106,7 +109,7 @@ img {
     color: var(--brown-800);
   }
   ul {
-    padding-left: 1rem;
+    padding-left: 1.4rem;
     padding-top: 1.5rem;
     display: flex;
     flex-direction: column;
@@ -114,6 +117,81 @@ img {
     color: var(--stone-600);
   }
   li {
-    padding-left: 1.2rem;
+    padding-left: 1.75rem;
   }
+}
+.instruction_card{
+  font-family: "Outfit", sans-serif;
+  h2 {
+    font-family: "Young Serif", serif;
+    font-size: 1.5rem;
+    color: var(--brown-800);
+  }
+  ol {
+    padding-left: 1.4rem;
+    padding-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--stone-600);
+  }
+  li {
+    padding-left: 1rem;
+    font-weight: 700;
+  }
+}
+.nutrition_value{
+  h2{
+    font-family: "Young Serif", serif;
+    font-size: 1.5rem;
+    color: var(--brown-800);
+  }
+  p{
+    font-family: "Outfit", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--stone-600);
+    margin: 1.6rem auto;
+  }
+}
+table{
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td{
+  border-bottom: 1px solid var(--stone-150);
+  padding: 0.8rem 1.5rem;
+  text-align: left;
+}
+th{
+  color: var(--stone-600);
+  font-family: "Outfit", sans-serif;  
+  font-weight: 400;
+}
+td{
+  color: var(--brown-800);
+  font-family: "Outfit", sans-serif;  
+  font-weight: 700;
+}
+
+@media screen and (max-width: 376px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  main{
+    border-radius: 0;
+    min-height: 100vh;
+    margin: 0;
+  }
+  img { 
+    width: 100vw;
+    max-height: none;
+    border-radius: 0;
+    padding: 0;
+    margin: -2.5rem;
+    object-fit: fill;
+  }
+
+
 }
